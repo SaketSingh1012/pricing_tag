@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 5% 5%;
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+}
+
+main {
+  padding: 5%;
+}
+body {
+  height: auto;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 4vh;
+  margin: 0;
+  color: hsl(233, 13%, 49%);
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  color: hsl(234, 14%, 74%);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#switch {
+  display: none;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 12vw;
+  height: 4vh;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 4vw;
+  height: 4vh;
+  background: #fff;
+  border-radius: 2vw;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: blueviolet;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 2vw;
+}
+
+label {
+  width: 40px;
+  height: 20px;
+}
+
+label:after {
+  width: 20px;
+  height: 20px;
+  left: 2px;
+}
+
+label:active:after {
+  width: 10px; /* Adjust as needed */
+}
+
+.head {
+  text-align: center;
+  color: hsl(233, 13%, 49%);
+}
+
+.price1 {
+  color: darkgray;
+  text-align: center;
+  font-size: 5vh;
+  border-bottom: 1px solid silver;
+  font-weight: bolder;
+  padding-bottom: 4vh;
+}
+
+.spacing1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.storage1 {
+  text-align: center;
+  color: grey;
+  border-bottom: 1px solid silver;
+  padding-bottom: 1.5vh;
+}
+
+.learn1 {
+  width: 90%;
+  text-align: center;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.learn1 button {
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.medium {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  padding-bottom: 5%;
+  border-radius: 5px;
+}
+
+.price {
+  color: white;
+}
+
+.price3 {
+  color: hsl(232, 13%, 33%);
+}
+
+.storage2 {
+  color: white;
+}
+#medium1 {
+  background-color: white;
+}
+.basic1 {
+  background-color: white;
+}
+
+#medium1 button {
+  color: hsl(237, 63%, 64%);
+  background-color: white;
+}
+
+.learn {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.learn button {
+  flex: 1;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+@media (min-width: 1000px) {
+  * {
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  .desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .big {
+    background-image: url("./images/bg-top.svg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: inherit;
+    background-color: hsl(240, 78%, 98%);
+    margin: 0;
+  }
+
+  .bgbottom {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    bottom: -200px;
+    background-image: url(./images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 0;
+  }
+
+  .basic1 {
+    margin: 0;
+    width: 25%;
+    height: 50vh;
+  }
+
+  .medium {
+    margin: 0;
+    width: 25%;
+    height: 55vh;
+  }
+}
