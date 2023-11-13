@@ -3,4 +3,5 @@
 
 
 # To download the project
-## 
+## git clone https://github.com/SaketSingh1012/pricing_tag.git
+## Click on Go Live
