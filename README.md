@@ -1,4 +1,4 @@
-# Link to Versal:
+# Link to Vercel:
 ## [Pricing_Tag](https://pricing-tag.vercel.app/)
 
 
