@@ -222,4 +222,19 @@ label:active:after {
     width: 25%;
     height: 55vh;
   }
+  .basic1{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .medium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+  }
 }
