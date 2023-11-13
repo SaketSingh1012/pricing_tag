@@ -1,2 +1,2 @@
 # Link to Netlify:
-## https://pricingtag-saket.netlify.app/
+## [Pricing_Tag](https://pricingtag-saket.netlify.app/)
